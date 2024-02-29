@@ -14,7 +14,7 @@ html {
   align-items: center;
   inline-size: 1200px;
   block-size: 100%;
-  margin: 31px auto 0;
+  margin: auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
@@ -60,7 +60,6 @@ a {
   position: relative;
   width: 711px;
   height: 386px;
-  block-size: fixed;
 }
 
 .result__video {
@@ -87,6 +86,8 @@ a {
 .search-form__label {
   display: flex;
   width: fit-content;
+  align-items: center;
+  cursor: pointer;
 }
 
 .search-form__fieldset-title {
@@ -102,8 +103,6 @@ a {
   width: 100%;
   font-weight: 400;
   font-size: 18px;
-  margin-top: 5px;
-  appearance: none;
   border-style: none;
   border-bottom: 1px solid #fff;
   border-top: 1px solid #fff;
@@ -117,7 +116,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  min-width: 212px;
+  gap: 15px;
 }
 
 .search-form__pseudo-checkbox {
@@ -167,7 +166,7 @@ a {
   font-weight: 700;
   font-size: 75px;
   line-height: 70.5px;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
 }
@@ -184,17 +183,15 @@ a {
   min-width: 399px;
   height: 298px;
   overflow-y: auto;
-  overflow-x: hidden;
 }
 
 .content__list-item {
-  margin-top: -6px;
   display: flex;
   max-width: 394px;
 }
 
 .content__list-item:not(:last-of-type) {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .content__card-link {
@@ -232,7 +229,7 @@ a {
   font-weight: 700;
   font-size: 30px;
   color: #fff;
-  margin-top: 5px;
+  margin-top: 2px;
   margin-bottom: 6px;
   text-transform: uppercase;
   text-overflow: ellipsis;
@@ -315,7 +312,6 @@ input {
 
 .content__card-link:focus {
   outline: none;
-  border: 1px solid #fff;
 }
 
 .content__card-link:focus-visible {
